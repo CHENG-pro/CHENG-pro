@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-label="Pinned: talent-role-fit-assessor">
+  <defs><style>
+    .title { font-family: 'Helvetica Neue', 'Arial Black', Impact, sans-serif; font-weight: 900; letter-spacing: -0.04em; }
+    .h     { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; letter-spacing: 0.20em; }
+    .body  { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 400; }
+    .meta  { font-family: 'Courier New', 'JetBrains Mono', monospace; font-weight: 400; letter-spacing: 0.06em; }
+    .num   { font-family: 'Helvetica Neue', 'Arial Black', sans-serif; font-weight: 900; }
+  </style></defs>
+  <rect width="600" height="380" fill="#0d1117"/>
+  <line x1="30" y1="30" x2="570" y2="30" stroke="#30363d" stroke-width="0.6"/>
+  <text x="30" y="22" class="meta" font-size="10" fill="#7d8590">// PINNED · featured repo</text>
+  <text x="570" y="22" text-anchor="end" class="meta" font-size="10" fill="#7d8590">github.com/CHENG-pro/talent-role-fit-assessor</text>
+  <text x="30" y="86" class="title" font-size="22" fill="#f0f6fc">TALENT-ROLE-FIT-ASSESSOR<tspan fill="#ff7b72">.</tspan></text>
+  <text x="30" y="120" class="body" font-size="13" fill="#c9d1d9">Claude Code Skill: 人岗匹配多源评估助手 - 基于员工简历、绩效、岗位要求与场景反馈生成证据可追溯的辅</text>
+  <text x="30" y="140" class="body" font-size="13" fill="#c9d1d9">助评估报告</text>
+  <g transform="translate(30,200)">
+    <g>
+      <text class="meta" font-size="9" fill="#7d8590">STARS</text>
+      <text class="num" font-size="44" fill="#f0f6fc" y="44">0</text>
+      <line x1="0" y1="54" x2="60" y2="54" stroke="#ffd33d" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(160,0)">
+      <text class="meta" font-size="9" fill="#7d8590">FORKS</text>
+      <text class="num" font-size="44" fill="#f0f6fc" y="44">0</text>
+      <line x1="0" y1="54" x2="60" y2="54" stroke="#58a6ff" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(320,0)">
+      <text class="meta" font-size="9" fill="#7d8590">LANG</text>
+      <text class="num" font-size="44" fill="#f0f6fc" y="44">HTML</text>
+      <line x1="0" y1="54" x2="60" y2="54" stroke="#e34c26" stroke-width="1.5"/>
+    </g>
+  </g>
+  <text x="30" y="316" class="h" font-size="11" fill="#7d8590">CLAUDE CODE SKILL &#183; 人岗匹配 &#183; 证据可追溯</text>
+  <text x="30" y="338" class="meta" font-size="11" fill="#7ee787">claude code skill &#183; /talent-role-fit-assessor</text>
+  <g transform="translate(30,360)">
+    <line x1="0" y1="0" x2="540" y2="0" stroke="#30363d" stroke-width="0.5"/>
+    <rect x="0" y="-1" width="0" height="2" fill="#ff7b72">
+      <animate attributeName="x" values="0;540" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="40;0" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
