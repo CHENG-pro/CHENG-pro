@@ -1,23 +1,36 @@
-name: generate snake
+name: generate contribution snake
 
 on:
   schedule:
+    # GitHub Actions cron uses UTC: 00:00/12:00 UTC = 08:00/20:00 China time.
     - cron: '0 */12 * * *'
   workflow_dispatch:
+  # Generate the output branch immediately when this workflow is first added or changed.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/snake.yml'
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
     steps:
       - name: Generate snake animation
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: CHENG-pro
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push snake to output branch
         uses: crazy-max/ghaction-github-pages@v4
